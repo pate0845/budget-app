@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { BudgetItem } from 'src/shared/models/budget-item.model';
 import { MatDialog } from '@angular/material/dialog';
 import { EditItemModalComponent } from '../edit-item-modal/edit-item-modal.component';
-=======
-import { Component, OnInit } from '@angular/core';
->>>>>>> e70e72945aa86049f7dc01e52b50b4c8cbfe7231
 
 @Component({
   selector: 'app-budget-item-list',
@@ -14,7 +10,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BudgetItemListComponent implements OnInit {
 
-<<<<<<< HEAD
   
   @Input() budgetItems: BudgetItem[];
   @Output() delete: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
@@ -54,11 +49,3 @@ export interface UpdateEvent {
   old: BudgetItem;
   new: BudgetItem;
 }
-=======
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
->>>>>>> e70e72945aa86049f7dc01e52b50b4c8cbfe7231
